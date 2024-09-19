@@ -2,50 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login form</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login form</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <section class="flex justify-center items-center h-screen">
-        <div class="mockup-phone">
-            <div class="camera"></div>
-            <div class="display">
-                <div class="artboard artboard-demo phone-1">
-                    <div class="hero bg-base-200 min-h-screen">
-                        <div class="hero-content flex-col">
-                            <h1 class="font-bold text-xl text-primary">Login Form</h1>
-                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                                <form class="card-body">
-                                    <div class="form-control">
-                                        <label class="label">
-                                            <span class="label-text">Your Number</span>
-                                        </label>
-                                        <input id="input-number" type="number" placeholder="Enter your number"
-                                            class="input input-bordered" required />
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label">
-                                            <span class="label-text">Your Pin</span>
-                                        </label>
-                                        <input id="input-pin" type="password" placeholder="Enter your Pin"
-                                            class="input input-bordered" required />
-                                    </div>
-                                    <div class="form-control mt-6">
-                                        <button id="loginBtn" class="btn btn-primary">Login</button>
-                                    </div>
-                                </form>
+<section class="flex justify-center items-center h-screen">
+<div class="mockup-phone">
+    <div class="camera"></div>
+    <div class="display">
+        <div class="artboard artboard-demo phone-1">
+            <div class="hero bg-base-200 min-h-screen">
+                <div class="hero-content flex-col">
+                    <h1 class="font-bold text-xl text-primary">Login Form</h1>
+                <small>number : 5 and pin: 1234</small>
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Your Number</span>
+                                </label>
+                                <input id="input-number" type="number" placeholder="Enter your number"
+                                    class="input input-bordered" required />
                             </div>
-                        </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Your Pin</span>
+                                </label>
+                                <input id="input-pin" type="password" placeholder="Enter your Pin"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="loginBtn" class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <script src="js/login.js"></script>
+    </div>
+</div>
+</section>
+<script src="js/login.js"></script>
 </body>
 
 </html>
