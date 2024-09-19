@@ -13,10 +13,6 @@ addAmmountBtn.addEventListener('click', () => {
 })
 
 const resultCashOutBtn = document.getElementById('resultCashOutBtn')
-const inputCashAmmount = parseFloat(document.getElementById('input-cash-ammount').value)
-const inputCashPin = parseFloat(document.getElementById('input-cash-pin').value)
-
-
 const resultAddAmmount = document.getElementById('resultAddAmmount')
 const mainBalanceString = document.getElementById('mainBalance')
 const mainBalance = parseFloat(mainBalanceString.innerText)
@@ -36,5 +32,18 @@ resultAddAmmount.addEventListener('click', (e) => {
     }
     else {
         alert('please enter correct pin number')
+    }
+})
+
+resultCashOutBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const inputCashAmmount = parseFloat(document.getElementById('input-cash-ammount').value)
+    const inputCashPin = parseFloat(document.getElementById('input-cash-pin').value)
+    if (inputCashPin === 1234) {
+        const currentBalance = (mainBalance - inputCashAmmount)
+        mainBalanceString.innerText = currentBalance
+    }
+    else {
+        alert('enter correct pin')
     }
 })
